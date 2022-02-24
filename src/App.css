@@ -1,0 +1,133 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.signin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(229, 168, 235);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.siginin-title {
+  text-align: center;
+  color: black;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.signin-box{
+  box-shadow: 1px 1px 15px rgb(32, 48, 48);
+}
+.signin-box form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(127, 235, 235);
+  padding: 20px;
+  gap: 20px;
+  width: 450px;
+}
+
+.signin-box form input, .signin-box form select {
+  height: 50px;
+  padding: 0px;
+  text-indent: 10px;
+  /* border: 1px solid black; */
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(17, 17, 17, 0.808);
+  background-color: rgb(27, 14, 14);
+  font-size: 18px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+}
+
+.signin-box form option {
+  background-color: rgb(27, 14, 14);
+  font-size: 16px;
+  color: white;
+  padding: 5px;
+}
+
+.signin-box form input:focus, .signin-box form select:focus {
+  outline: 2px solid whitesmoke;
+  box-shadow: 0px 0px 10px rgba(245, 245, 245, 0.411);
+  color: white;
+}
+
+.signin-box form input::placeholder {
+  color: rgb(255, 255, 255);
+}
+
+.AlreadyRegister{
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.borders{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(127, 235, 235);
+  padding: 20px;
+  gap: 20px;
+  width: 450px;
+}
+
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-sizing:border-box;;
+  width:100%;
+  min-height:50px;
+  padding:20px 20px;
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: rgb(127, 235, 235);
+  font-size:16px;
+}
+.header-link{
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration:none;
+  align-items:center;
+}
+
+.right-header, .user{
+    flex:0.5;
+    display:flex;
+    font-size: 20px;
+    font-weight: 700;
+    justify-content:right;
+    align-items:center;
+    gap:20px;
+}
+.user > span{
+  font-size: 20px;
+}
+
+.header-btn{
+  height: 30px;;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(17, 17, 17, 0.808);
+  background-color: rgb(27, 14, 14);
+  font-size: 18px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255); 
+  text-decoration:none;
+  padding: auto;
+  justify-content: center;
+}
