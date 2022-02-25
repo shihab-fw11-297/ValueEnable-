@@ -7,7 +7,7 @@ Design a node application with below requirement:
 2. based on user role, show dashboard (any of the users like admin, customer, moderator can be chosen and their
 dashboard showing some customized information)
 3. user can be registered and information stored in DB (your choice)
-==============================================
+
 
 ## Installation
 -------------------------
@@ -23,3 +23,8 @@ dashboard showing some customized information)
 2. MongoDB
 3. Express.js
 4. NodeJs
+
+## Front End Layout
+-------------------------
+
+![ValueEnable-Assignment](https://github.com/shihab-fw11-297/ValueEnable-/blob/main/Hnet-image.gif)
