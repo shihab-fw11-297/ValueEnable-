@@ -11,10 +11,10 @@ dashboard showing some customized information)
 
 ## Installation
 -------------------------
-
-1. Run this command in your terminal: npm install
-2. In the project directory, you can run: npm start
-3. Builds the app for production to the build folder: npm run build
+1. download zip file and extract in system
+2. Run this command in your terminal: npm install
+3. In the project directory, you can run: npm start
+4. Builds the app for production to the build folder: npm run build
 
 
 ## Technologies that we used :-
