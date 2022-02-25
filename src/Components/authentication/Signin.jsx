@@ -1,12 +1,11 @@
 import { useContext,useState } from "react";
 import axios from "axios";
-import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { Link } from 'react-router-dom';
 import { AuthContext } from "../../context/AuthContext"
 
 
 const SignIn = () => {
-    const {auth,setAuth} = useContext(AuthContext);
+    const {setAuth} = useContext(AuthContext);
     const initState = {
         name: "",
         username: "",
@@ -16,7 +15,7 @@ const SignIn = () => {
     }
     const [userData, setUserData] = useState(initState);
     const [signuperror, setSignUpError] = useState(false)
-    const history = useHistory();
+
 
     const handleInput = (e) => {
         let { name, value } = e.target;
@@ -90,8 +89,9 @@ const SignIn = () => {
                         </select>
                         <input type="submit" onClick={handleSignin} />
                         <p className="AlreadyRegister">If you are not Registerd Then Please <b><Link to="/register">Click Here</Link></b></p>
-                        {signuperror ? <p className="AlreadyRegister">Something Wrong Please Check and Try Gain Leter</p> : ""}
-
+                        {signuperror ? <p className="AlreadyRegister">Something Wrong Please Check and Try Gain Leter</p> : "" }
+                        
+                      
                     </form>
                 </div>
             </div>

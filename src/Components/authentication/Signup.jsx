@@ -51,15 +51,7 @@ const Signup = () => {
                 setSignUpError(true)
                 emptyData()
             })
-        } else if (userData.role === 'admin') {
-            axios.post(`http://localhost:5000/api/users/register-admin`, userData).then(res => {
-                setSignUpError(false)
-                emptyData()
-                history.push("/login");
-            }).catch(function (e) {
-                setSignUpError(true)
-                emptyData()
-            })
+       
         } else if (userData.role === 'moderator') {
             axios.post(`http://localhost:5000/api/users/register-moderator`, userData).then(res => {
                 setSignUpError(false)
@@ -89,7 +81,6 @@ const Signup = () => {
                         <option disabled defaultValue>Select Your Roles</option>
                             <option value="Customer">Customer</option>
                             <option value="moderator">moderator</option>
-                            <option value="admin">admin</option>
                         </select>
                         <input type="submit" onClick={normalSignUp} />
                         <p className="AlreadyRegister">If you are Alredy Registerd Then Please <b><Link to="/login">Click Here</Link></b></p>

@@ -10,7 +10,7 @@ const {
 
 // Users Registeration Route
 router.post("/register-user", async (req, res) => {
-    await userRegister(req.body, "user", res);
+    await userRegister(req.body, "customer", res);
 });
 
 // Admin Registration Route
@@ -25,7 +25,7 @@ router.post("/register-moderator", async (req, res) => {
 
 // Users Login Route
 router.post("/login-user", async (req, res) => {
-    await userLogin(req.body, "user", res);
+    await userLogin(req.body, "customer", res);
 });
 
 // Admin Login Route
@@ -48,9 +48,9 @@ router.get("/profile", userAuth, async (req, res) => {
 router.get(
     "/user-protectd",
     userAuth,
-    checkRole(["user"]),
+    checkRole(["customer"]),
     async (req, res) => {
-        return res.json("Hello User");
+        return res.json("Hello customer");
     }
 );
 
